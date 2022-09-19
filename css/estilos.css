@@ -1,0 +1,471 @@
+/*Efectos generales */ 
+
+* {
+    margin: 10;
+    padding: 10;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    font-family:'Times New Roman', Times, serif;
+    border: #0a1860;   
+}
+
+.titulo-principal{
+    display:flexbox;
+    width: auto;
+    margin: auto;
+    background: #393b423c;
+    font-size: 50px;
+    padding: 20px;    
+    text-align: center;
+}
+
+.principal{
+    display:flexbox;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    height: 760px;
+    left: 573px;
+    top: 148px; 
+}
+
+.boton-principal{
+    align-items:center;
+    margin-left: 200px;
+    margin-top: 0px;
+    left: 250px;
+    padding: 50px 40px 20px 5px;
+    width: auto;
+    height: 100px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+
+.boton-secundario{
+    margin-left: 170px;
+    left: 150px;
+    padding: 20px;
+    width: auto;
+    height: 100px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button:hover{
+    border-color: #abd1df;
+    border-style: dashed;
+    color: #111e7e;
+    font-weight: bold;
+}
+
+button:active{
+    color: #90d409;
+    border-color:  #111e7e;
+    font-size: 40px;
+    border-style:dotted 85px;
+    padding: 5px;
+    font-family: 'Lucida Sans' sans-serif;
+    border-radius: 30px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+/* comienza pagina para agregar palabra  */ 
+
+header{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans', sans-serif;
+    color:  #0a1860;
+
+}
+/* Aqui viene la ahorca */
+.container_ahorcado{
+    width: 100px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+.pantalla2{
+    display: none;
+}
+.pantalla3{
+    display: none;
+}
+.txt_nueva_palabra{
+    border-style: none;
+    outline: none;
+}
+.container_ahorcado{
+    width: 100vw;
+    text-align: center; 
+    margin-top:4rem ;
+    margin-bottom: 2rem;
+}
+#mon_ahorcado{
+   max-width: 100%;
+   min-height: 100%;
+   width: 25rem;
+   height:30rem;
+   display: inline-block;
+}
+#mon_ahorcado::after{
+    content: "Hombre ahorcado";
+}
+.letra_valida{
+    text-align: center;
+    color: #052051;
+    font-size: 1.8rem;
+}
+.letra{
+   display: inline-block; 
+   vertical-align: middle;
+   text-align: center;
+  
+}
+.correcta{
+    width: 4rem;
+    height: 4rem;
+    border-bottom:solid 1px #052051 ;
+    margin-left: .4rem;
+    line-height: 4.5rem;
+}
+.letra_invalida{
+    text-align: center;
+    margin-top: 1rem;
+    color: #495057;
+    
+}
+.incorrecta{
+    margin-left: 1rem;
+}
+[type="button"]{
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #0A3871;
+    color: #0A3871;
+    cursor:pointer;
+    background: inherit;
+}
+.botones{
+    margin-top: 3rem;
+    text-align: center;
+
+}
+.btn-azul{
+    background-color: #0A3871;
+    color: white;
+    border-color: #45cdd7;
+    font-size: 30px;
+    border-style:dotted 85px;
+}
+
+
+
+@media all and (min-width:100px){
+    header{
+        margin: 3%;
+    }
+    [type="button"]{
+        margin:5px;
+    }
+    #mon_ahorcado{
+        max-width:90%;
+    }
+    .btn_iniciar {
+        display: block;
+        width: 85%;
+        height: 80px;
+        margin: 170px auto 20px auto;
+        border-radius: 24px;
+        background-color: #F3F5FC;
+        border-color: #0A3871;
+        color: #0A3871;
+        cursor:pointer;
+    }
+    .btn_nueva_palabra{
+        display: block;
+        width: 85%;
+        height: 80px;
+        margin: 170px auto 20px auto;
+        border-radius: 24px;
+        background-color: #F3F5FC;
+        border-color: #0A3871;
+        color: #0A3871;
+        cursor:pointer;
+    }
+    .txt_nueva_palabra{
+        display: block;
+        width: 84%;
+        height: 48px;
+        margin: 110px 6% 210px 6%;
+        font-size: 2rem;
+        color: #0A3871;
+    }
+    .lbl_informacion{
+        margin-left:6%;
+        color: #495057;
+    }
+    .btn_guardar{
+        display: block;
+        width: 90%;
+        height: 67px;
+        margin: 16px 5% 24px 5%;
+        border-radius: 24px;
+        background-color: #0A3871;
+        color: white;
+        border-color: #0A3871;
+        cursor:pointer;
+    }
+    .btn_cancelar{
+        display: block;
+        width: 90%;
+        height: 67px;
+        margin: 0 5% 24px 5%;
+        border-radius: 24px;
+        background-color: #F3F5FC;
+        border-color: #0A3871;
+        color: #0A3871;
+        cursor:pointer;
+    }
+}
+
+@media all and (min-width: 640px){
+    .btn_iniciar {
+        width: 50%;
+        margin: 170px auto 20px auto;
+        cursor:pointer;
+    }
+    .btn_nueva_palabra{
+        width: 48%;
+        margin: 0px auto 0px auto;
+        cursor:pointer;
+    }
+    .txt_nueva_palabra{
+        display: block;
+        width: 60%;
+        margin: 150px 0 600px 6%;
+    }
+    .lbl_informacion{
+        display: block;
+        margin: 0 40% 0 6%;
+        color: #495057;
+    }
+    .btn_guardar{
+        display:inline-block;
+        width: 41.7%;
+        margin: 16px 2% 0px 6%;
+    }
+    .btn_cancelar{
+        display:inline-block;
+        width: 41.7%;
+        margin: 16px 6% 0px 2%;
+    }
+}
+
+@media all and (min-width:992px){
+    header{
+        margin: 3% 6%;
+    }
+    .btn_iniciar{
+        width: 20%;
+        margin: 10% auto 38px auto;
+        cursor:pointer;
+    }
+    .btn_nueva_palabra{
+        width: 20%;
+        margin: 0px auto 0px auto;
+        cursor:pointer;
+    }
+    .txt_nueva_palabra{
+        display: block;
+        width: 23.7%;
+        margin: 120px 0 150px 24%;
+    }
+    .lbl_informacion{
+        display: block;
+        margin: 0 0 0 24%;
+        color: #495057;
+    }
+    .btn_guardar{
+        display:inline-block;
+        width: 23.7%;
+        margin: 16px 2% auto 24%;
+        cursor:pointer;
+    }
+    .btn_cancelar{
+        display:inline-block;
+        width: 23.7%;
+        margin: 16px 24% auto 2%;
+        cursor:pointer;
+    }
+}
+
+.input-text-area{
+    height: 260px;
+    width: 620px;
+    position: center;
+    margin: 80px 90px;
+    color: #0a1860;
+    font-size: 30px;
+    padding: 35px;
+    border-radius: 35px;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+.button:holver{
+    border-color:#90d409;
+    border-style: dashed;
+    color: #111e7e;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.button:active{
+    color: #90d409;
+    border-color: #259299de;
+    font-size: 70px;
+    border-style:dotted 85px;
+    padding: 5px;
+    font-family: 'Lucida Sans' sans-serif;
+    border-radius: 30px;
+}
+
+
+/* ESTILOS GENERALES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#000;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+    background-size: cover;
+    background-color: #ffffff;
+    background-position:center;
+	margin-left: auto; 
+	margin-right: auto;
+    margin-top: 15px;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 99;
+    opacity: .85;
+}
+
+.contenedor.header {
+    height: calc(100vh - 55px);
+    border: 3px solid #555555;
+}
+
+.barra-navegacion ul {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-navegacion li {
+    list-style: none;
+    display: inline-block;
+}
+
+.barra-navegacion .logo { 
+    color:#3dff3e;
+    font-size: 50px;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: .5s ease;
+}
+
+.barra-navegacion a:hover {
+    color: #3dff3e;
+    border-bottom: 1px solid currentcolor;
+}
+
+.contenido-descripcion {
+    width: 60%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.contenido-descripcion .titulo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.contenido-descripcion .titulo span:first-child {
+    font-size: 50px; 
+    display: block;
+    font-weight: 300;
+}
+
+.contenido-descripcion .titulo span:last-child {
+    font-weight: 900;
+    font-size: 100px;
+}
+
+.contenido-descripcion .btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 25px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3dff3e;
+    border: 1px solid #555555;
+    animation: parpadeo 2s linear infinite;
+    transition: .7s ease;
+}
+
+.contenido-descripcion .btn-link:hover {
+    border: 1px solid #3dff3e;
+    animation: none;
+}
+
+
+@keyframes parpadeo  {
+    0%, 41%, 45%, 47%, 49.5%, 100%  { 
+        opacity: 1;
+    }
+
+    42%, 44%, 46%,48%,  50%  { 
+        opacity: 0; 
+    }
+}

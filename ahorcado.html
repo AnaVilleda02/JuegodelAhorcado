@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Mi juego del ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" href="css/alert2.min.css" 
+</head>
+
+<body>
+    <!-- ID Particles.js -->
+    <div id="particles-js"></div>
+    <header class="contenedor header">
+        <div> 
+            <h1 class="titulo-principal" ><img src="imag/Logo.png">  	
+                &#308&#365&#281&#487&#335  &#271&#277&#318  &#8491&#104&#417&#341&#99&#261&#273&#335 </h1>                                             
+        </div>
+        <main>
+        <section class="inicial"> 
+
+            <div class="pantalla1">
+                <button id="btnIniciar" class="btn_iniciar">Iniciar Juego</button>
+                <button id="btnNuevaPalabra" class="btn_nueva_palabra">Agregar palabra</button>
+            </div> 
+            <div class="pantalla2">
+                <input type="text" id="txtAgregarPalabra" class="txt_nueva_palabra" placeholder="Nueva palabra">
+                <label class="lbl_informacion"><span>!</span> "&#9888 Máx. 8 letras, sin caracteres especiales, todo o escribirá en mayúsculas"</label>   
+                <button id="btnGuardar" class="btn_guardar">Guardar</button>
+                <button id="btnCancelar" class="btn_cancelar">Cancelar</button>
+            </div> 
+            <div class="pantalla3">
+                <div class="container_ahorcado">
+                    <img id="mon_ahorcado" alt="Ahorcado">
+                </div>
+                
+            <div class="letra_valida"></div>
+            <div class="letra_invalida"></div>
+            
+                <form  class="botones" action="javacript:void(0)"> 
+                    <input type="button" class="btn-azul" value="&#128640 Nuevo juego" onclick="jugarOtro()"/>
+                    <input id="btnMatar" type="button" value="&#9760Matar juego">
+                </form>
+            </div>                                
+        </section>         
+    </header>        
+</main>
+
+    <!-- JS Particles.js -->
+        
+            <!---- particulas  JS-->  
+    
+    <script src="js/particles.min.js"></script>
+    <script src="js/alert2.all.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script> 
+
+    
+</body>
+            <footer><p>  Ana Villeda - Alura Challenge #2</p></footer>
+
+</html>
